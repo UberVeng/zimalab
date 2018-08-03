@@ -13,24 +13,12 @@ html, body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items: stretch;
-	align-content: space-around;
+	align-items: center;
+	align-content: center;
 }
- #loginBtn{
-	margin: 0;
-	float: left;
-	text-align: center;
-	width: 100px;
-	height: 40px;
-	background-color: #dbc1ff;
-	border: 1px #d0b0fe solid;
-	border-radius: 2px;
-	cursor: pointer;
-	font-family: "Segoe UI";
-	transition: background-color 0.2s linear, border-color 0.2s linear;
 
- }
 #loginBox{
 	/*position: absolute;*/
 	width: 380px;
@@ -67,12 +55,25 @@ html, body {
 	background-color: #c59bff;
 	border-color: #b785ff;
 }
+#loginBtn{
+   margin: 0;
+   text-align: center;
+   width: 100px;
+   height: 40px;
+   background-color: #dbc1ff;
+   border: 1px #d0b0fe solid;
+   border-radius: 2px;
+   cursor: pointer;
+   font-family: "Segoe UI";
+   transition: background-color 0.2s linear, border-color 0.2s linear;
+
+}
 #loginBtn:hover{
 	background-color: #c59bff;
 	border-color: #b785ff;
 }
 #regLink{
-	margin: auto;
+	margin: 0;
 	text-align: center;
 	text-decoration: underline;
 	font-family: 'Segoe UI';

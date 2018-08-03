@@ -35,28 +35,28 @@ $login = $_GET['user'];
 				<th>phone_number_3</th>
 			</thead>
 			<tbody>
-				<td><input name="firstName" type="text" style="border: 0;" value="';
+				<td><input name="firstName" type="text" placeholder="Enter your name" style="border: 0;" value="';
 				echo $user['first_name'];
 				echo '" required/></td>
-				<td><input name="lastName"type="text" style="border: 0;" value="';
+				<td><input name="lastName"type="text" placeholder="Enter your last name" style="border: 0;" value="';
 				echo $user['last_name'];
 				echo '" required/></td>
-				<td><input name="email"type="text" style="border: 0;" value="';
+				<td><input name="email"type="text" placeholder="Enter your email" style="border: 0;" value="';
 				echo $user['email'];
 				echo '" required/></td>
-				<td><input name="company"type="text" style="border: 0;" value="';
+				<td><input name="company"type="text" placeholder="Enter your company" style="border: 0;" value="';
 				echo $user['company'];
 				echo '" /></td>
-				<td><input name="position"type="text" style="border: 0;" value="';
+				<td><input name="position"type="text" placeholder="Enter your position" style="border: 0;" value="';
 				echo $user['position'];
 				echo '"/></td>
-				<td><input name="phoneNumber1"type="text" style="border: 0;" value="';
+				<td><input name="phoneNumber1"type="text" placeholder="Enter your phone number" style="border: 0;" value="';
 				echo $user['phone_number_1'];
 				echo '" /></td>
-				<td><input name="phoneNumber2"type="text" style="border: 0;" value="';
+				<td><input name="phoneNumber2"type="text" placeholder="Enter your phone number" style="border: 0;" value="';
 				echo $user['phone_number_2'];
 				echo '" /></td>
-				<td><input name="phoneNumber3"type="text" style="border: 0;" value="';
+				<td><input name="phoneNumber3"type="text" placeholder="Enter your phone number" style="border: 0;" value="';
 				echo $user['phone_number_3'];
 				echo '" /></td>
 			</tbody>

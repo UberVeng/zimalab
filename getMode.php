@@ -2,7 +2,7 @@
 /*
 Функция смены режима логи на рагистрацию и наоборот
 */
-function getMode($mode = 'login')
+function getMode($mode)
 {
 	switch(htmlspecialchars(trim($mode))){
 		case 'login':
@@ -12,7 +12,7 @@ function getMode($mode = 'login')
 			$action = 'register.php';
 			break;
 		default:
-			$action = 'login.php';
+			$action = 'index.php';
 			break;
 	}
 	return $action;

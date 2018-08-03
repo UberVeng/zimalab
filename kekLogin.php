@@ -19,6 +19,6 @@ else{
 		$mode = $_GET['mode'];
 	}
 	else{
-		$mode = 'login';
+		$mode = 'index';
 	}
 }
