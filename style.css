@@ -1,0 +1,117 @@
+html, body {
+	margin: 0;
+}
+#nav{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+#allContent{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	align-content: space-around;
+}
+ #loginBtn{
+	margin: 0;
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	background-color: #dbc1ff;
+	border: 1px #d0b0fe solid;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: "Segoe UI";
+	transition: background-color 0.2s linear, border-color 0.2s linear;
+
+ }
+#loginBox{
+	/*position: absolute;*/
+	width: 380px;
+	height: 280px;
+	margin: 0 auto;
+	padding: 60px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0px 0px 5px 2px #bdbdbd;
+}
+#inp{
+	margin: 0;
+	margin-top: 40px;
+	width: 250px;
+	height: 35px;
+	text-align: center;
+	border-width: 0px 0px 2px 0px;
+	border-color: #b785ff;
+	font-family: "Segoe UI";
+}
+.submit{
+	margin: 0px;
+	margin-top: 50px;
+	width: 250px;
+	height: 35px;
+	background-color: #dbc1ff;
+	border: 1px #d0b0fe solid;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: "Segoe UI";
+	transition: background-color 0.2s linear, border-color 0.2s linear;
+}
+#submit:hover{
+	background-color: #c59bff;
+	border-color: #b785ff;
+}
+#loginBtn:hover{
+	background-color: #c59bff;
+	border-color: #b785ff;
+}
+#regLink{
+	margin: auto;
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Segoe UI';
+	font-size: small;
+	text-decoration-color: #606060;
+	color: #606060;
+	transition: text-decoration-color 0.5s linear, color 0.5s linear;
+}
+#regLink:hover{
+	text-decoration-color: black;
+	color: black;
+	cursor: pointer;
+}
+#back{
+	text-decoration: underline;
+	text-decoration-color: #606060;
+	color: #606060;
+	font-family: 'Segoe UI';
+	font-size: small;
+	transition: text-decoration-color 0.5s linear, color 0.5s linear;
+}
+#back:hover{
+	text-decoration-color: black;
+	color: black;
+	cursor: pointer;
+}
+table{
+	 margin-left:10px;
+	 border-collapse: collapse;
+	 border: #d2d0d0 1px solid;
+}
+tr{
+	height:35px;
+	border-bottom: #d2d0d0 1px solid;
+}
+td{
+	border-right: #d2d0d0 1px solid;
+}
+th{
+	border-right: #d2d0d0 1px solid;
+	padding:5px;
+}
