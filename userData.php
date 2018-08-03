@@ -17,6 +17,7 @@ $login = $_GET['user'];
 	<?php
 	session_start();
 	if($_SESSION['login'] == $_GET['user']){
+		$user = findUser($login)->fetch_assoc();
 		echo '
 		<form method="post" action="regCompleted.php?user=';
 		echo "$login";
@@ -34,14 +35,30 @@ $login = $_GET['user'];
 				<th>phone_number_3</th>
 			</thead>
 			<tbody>
-				<td><input name="firstName" type="text" required/></td>
-				<td><input name="lastName"type="text" required/></td>
-				<td><input name="email"type="text" required/></td>
-				<td><input name="company"type="text" /></td>
-				<td><input name="position"type="text" /></td>
-				<td><input name="phoneNumber1"type="text" /></td>
-				<td><input name="phoneNumber2"type="text" /></td>
-				<td><input name="phoneNumber3"type="text" /></td>
+				<td><input name="firstName" type="text" style="border: 0;" value="';
+				echo $user['first_name'];
+				echo '" required/></td>
+				<td><input name="lastName"type="text" style="border: 0;" value="';
+				echo $user['last_name'];
+				echo '" required/></td>
+				<td><input name="email"type="text" style="border: 0;" value="';
+				echo $user['email'];
+				echo '" required/></td>
+				<td><input name="company"type="text" style="border: 0;" value="';
+				echo $user['company'];
+				echo '" /></td>
+				<td><input name="position"type="text" style="border: 0;" value="';
+				echo $user['position'];
+				echo '"/></td>
+				<td><input name="phoneNumber1"type="text" style="border: 0;" value="';
+				echo $user['phone_number_1'];
+				echo '" /></td>
+				<td><input name="phoneNumber2"type="text" style="border: 0;" value="';
+				echo $user['phone_number_2'];
+				echo '" /></td>
+				<td><input name="phoneNumber3"type="text" style="border: 0;" value="';
+				echo $user['phone_number_3'];
+				echo '" /></td>
 			</tbody>
 		</table>
 		<input class="submit" type="submit" value="Сохранить" />

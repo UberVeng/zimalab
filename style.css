@@ -110,6 +110,7 @@ tr{
 }
 td{
 	border-right: #d2d0d0 1px solid;
+	padding: 0px 5px 0px 5px;
 }
 th{
 	border-right: #d2d0d0 1px solid;
