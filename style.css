@@ -49,9 +49,9 @@ html, body {
 	border-radius: 2px;
 	cursor: pointer;
 	font-family: "Segoe UI";
-	transition: background-color 0.2s linear, border-color 0.2s linear;
+	transition: background-color 0.5s linear, border-color 0.5s linear;
 }
-#submit:hover{
+.submit:hover{
 	background-color: #c59bff;
 	border-color: #b785ff;
 }
@@ -74,12 +74,13 @@ html, body {
 }
 #regLink{
 	margin: 0;
+	margin-top: 5px;
 	text-align: center;
 	text-decoration: underline;
 	font-family: 'Segoe UI';
 	font-size: small;
-	text-decoration-color: #606060;
-	color: #606060;
+	text-decoration-color: #7b7b7b;
+	color: #7b7b7b;
 	transition: text-decoration-color 0.5s linear, color 0.5s linear;
 }
 #regLink:hover{

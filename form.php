@@ -18,7 +18,7 @@ require "head.php"; //Вызов тега <head>
 				 <form id="loginForm" name="loginForm" method="post" action=';
 				 echo $action;
 				 echo '>
-					 <input id="inp" type="login" placeholder="Логин" name="uname"><br />
+					 <input id="inp" type="login" placeholder="Логин" name="uname" autofocus><br />
 					 <input id="inp" type="password" placeholder="Пароль" name="psw">
 					 <input class="submit" id="sub" type="submit" value=';
 					 if ($mode == "login"){echo "Войти";}else{echo "Зарегистрироваться";}
